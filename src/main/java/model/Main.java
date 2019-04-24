@@ -1,9 +1,7 @@
 package model;
 
 import Core.book.dao.JdbcBookDao;
-import build.DataLoader;
 
-import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -36,12 +34,12 @@ public class Main {
         //System.out.println(est.getNombre()+" "+est.getApellido()+" "+est.getCorreo()+" "+est.getCarne());
         studentDao.remove(est);
         */
-        DataLoader dataLoader = new DataLoader();
+       /* DataLoader dataLoader = new DataLoader();
         try {
             dataLoader.cargarXLS();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
         JdbcBookDao objeto = new JdbcBookDao();
         Libro lbr = new Libro();
         String nombre;
